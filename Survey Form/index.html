@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title" class="headline">Survey Form</h1>
+    <p id="description" class="description">Thank you for your interest. and will contact you back</p>
+    <form id="survey-form" class="form">
+        <fieldset class="fieldset">
+            <label for="name-label" id="name-label" class="label">What is your name?<input id="name" name="name" class="input" type="text" placeholder="Enter your name" required /></label>
+            <label for="email-label" id="email-label" class="label">What is your email?<input id="email" name="email" class="input" type="email" placeholder="Enter your email" required /></label>
+            <label for="number-label" id="number-label" class="label">How tall?<input id="height" name="height" class="input" type="number" placeholder="Enter your height" /></label>
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend class="legend">What is your occupation?</legend>
+            <select id="dropdown" name="occupation" class="input">
+                <option value="">Select one</option>
+                <option value="Student">Student</option>
+                <option value="Project Manager">Project Manager</option>
+                <option value="Developer">Developer</option>
+                <option value="System Analyst">System Analyst</option>
+                <option value="Business Analyst">Business Analyst</option>
+                <option value="Other">Other</option>
+            </select>
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend class="legend">What gender are you?</legend>
+            <label for="male" class="label"><input type="radio" id="male" name="gender" class="inline" value="male" checked />Male</label>
+            <label for="female" class="label"><input type="radio" id="female" name="gender" class="inline" value="female" />Female</label>
+            <label for="lgbtq" class="label"><input type="radio" id="lgbtq" name="gender" class="inline" value="LGBTQ" />LGBTQ</label>
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend class="legend">What sports are you interested in?</legend>
+            <label class="label"><input type="checkbox" id="badminton" name="badminton" value="Badminton" class="inline" />Badminton</label>
+            <label class="label"><input type="checkbox" id="swimming" name="swimming" value="Swimming" class="inline" />Swimming</label>
+            <label class="label"><input type="checkbox" id="basketball" name="basketball" value="Basketball" class="inline" />Basketball</label>
+            <label class="label"><input type="checkbox" id="football" name="football" value="Football" class="inline" />Football</label>
+            <label class="label" for="suggestions">What do you want to do in the future?<textarea class="input" id="suggestions" name="suggestions" rows="5" cols="30" placeholder="Enter your answer.."></textarea></label>
+            <input type="submit" id="submit" name="submit" class="submit" value="Send Form" />
+        </fieldset>
+    </form>
+</body>
+
+</html>

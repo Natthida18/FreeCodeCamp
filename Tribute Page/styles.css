@@ -1,0 +1,51 @@
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e0e0e0;
+  }
+  
+  h1, .description {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  h1 {
+    font-size: 40px;
+  }
+  
+  .description {
+    font-size: 18px;
+  }
+  
+  .heading {
+    text-align: center;
+  }
+  
+  .img {
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  
+  .img img {
+    width: 100%;
+    max-width: 100%;
+    /* defalt display is inline */
+    display: block; 
+    margin: 0 auto;
+  }
+  
+  .caption {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .fact-list li {
+    margin-bottom: 10px;
+  }
+  
+  .bold {
+    font-weight: 700;
+  }

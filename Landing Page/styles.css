@@ -264,7 +264,7 @@ h1 {
 
   .product-item {
     grid-template-columns: 1fr 1fr ;
-    padding: 0 20px;
+    padding: 20px;
   }
 }
 
@@ -282,7 +282,13 @@ h1 {
   }
 
   .product-item {
-    width: min(100%, 600px);
-    padding: 30px;
+    display: inline-block;
+    width: min(100%, 500px);
+    padding: 20px;
+    text-align: center;
+  }
+
+  .button {
+    align-self: center;
   }
 }

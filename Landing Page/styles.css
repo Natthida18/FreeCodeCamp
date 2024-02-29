@@ -1,143 +1,160 @@
 :root {
   --main-color: #12b560;
-  --text-color: #444444;
+  --text-color1: #ffffff;
+  --text-color2: #444444;
   --hover-color: #d3d3d3;
   --border-color: #f3f3f3;
   --background-color1: #e3e3e3;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Tahoma;
+  font-family: "Noto Sans", sans-serif;
   margin: 0 auto;
-  /* background: linear-gradient(#00CED1 0%, #4682B4 50%, #191970 100%); */
-  color: var(--text-color);
+  color: var(--text-color2);
 }
 
 .center {
   text-align: center;
 }
 
-.head {
-  width: 100%;
-  position: fixed;
-}
-
-.head-wrap {  
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.site-head {  
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+  gap: 20px;
   background-color: var(--background-color1);
+  margin: 0 auto;
+  padding: 20px 40px;
 }
 
 .logo {
   width: 150px;
-  margin-left: 20px;
 }
 
-.navbar ul {
-  list-style: none;
+.menu {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 2rem;
+  list-style: none;
+  color: var(--text-color2);
 }
 
-.navbar li {
+.navbar-list {
   font-size: 20px;
   font-weight: 700;
 }
 
-.nav-link a, .footer-link a {
+.navbar-link, .footer-link {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--text-color2);
 }
 
-.nav-link a:hover {
+.navbar-link:hover, .footer-link:hover {
   color: var(--main-color);
 }
 
 .container {
-  width: fit-content;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  color: var(--text-color1);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .main-sec {
-  padding: 50px 0;
+  width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('https://ik.imagekit.io/tvlk/blog/2022/08/Sulloc-Green-Tea-Farm-w2.jpg?tr=dpr-2,w-675');
-
-  /* background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210911/pngtree-spring-tea-afternoon-tea-field-tea-field-without-photographs-with-pictures-image_849339.jpg'); */
   background-size: cover;
-}
-
-.main-wrap {
-  color: white;
-  padding: 20px;
 }
 
 .play-video {
   width: 800px;
   height: 400px;
-  margin-top: 20px;
+  aspect-ratio: 16/9;
+  margin-top: 30px;
+}
+
+h1 {
+  margin: 0;
 }
 
 .title {
   font-size: 30px;
-  margin: 50px 0;
 }
 
 .sub-title {
   font-size: 22px;
 }
 
-.for-earth-sec {
+.about-section {
   background-color: #e3fff0;
   padding: 50px;
 }
 
-.for-earth-wrap {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap; /* Allows items to wrap in smaller screens */
-  margin: 0 50px;
+.about-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 50px 0;
 }
 
-.for-earth-detail {
-  flex: 1; /* Gives each item the ability to grow */
-  max-width: calc(33.333% - 20px);
+.about-detail {
   border: 1px solid var(--hover-color); 
   border-radius: 20px;
-  padding: 10px;
-  background-color: white;
-  box-sizing: border-box;
+  padding: 20px;
+  background-color: var(--text-color1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.for-earth-detail:hover {
+.about-detail:hover {
   box-shadow: 1px 5px 5px var(--main-color); 
 }
 
-.container1, .container1.left {
-  display: flex;
-  flex-direction: row;
+.product {
+  padding: 50px 0;
+}
+
+.product-item {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  justify-items: center;
   align-items: center;
+  margin: 0 auto;
+  padding: 30px;
+  width: min(100%, 800px);
 }
 
-.container1.right {
-  flex-direction: row-reverse;
+.product-item.left {
+  grid-template-areas: 'image detail';
 }
 
-.container1.left, .container1.right {
-  padding: 50px;
+.product-item.right {
+  grid-template-areas: 'detail image';
 }
 
-.column {
-  flex: 1; /* ให้คอลัมน์ยืดขยายตามพื้นที่ที่เหลือใน Container */
+.product-datail {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  grid-area: detail;
 }
 
 .product-img {
-  width: 300px;
+  width: 100%;
+  grid-area: image;
 }
 
 .button {
@@ -148,7 +165,7 @@ body {
   border: none;
   border-radius: 5px;
   background-color: var(--main-color);
-  color: #ffffff;
+  color: var(--text-color1);
   cursor: pointer;
 }
 
@@ -167,7 +184,7 @@ body {
 
 .input-submit {
   background-color: var(--main-color);
-  color: white;
+  color: var(--text-color1);
   cursor: pointer;
 }
 
@@ -177,37 +194,41 @@ body {
 
 .footer-wrap {
   background-color: var(--background-color1);
-  padding: 20px 0;
+  padding: 30px;
   display: flex;
-  justify-content: space-around;
-  align-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 20px;
 } 
 
-.footer h3 {
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-head {
   text-transform: uppercase;
   margin: 0;
 }
 
-.footer ul {
+.footer-menu {
   list-style: none;
-  padding: 0;
 }
 
-.footer li {
+.footer-list {
   font-size: 16px;
-  margin: 10px 0;
+  padding-top: 10px;
 }
 
-.footer-link a:hover {
-  color: #12b560;
-}
-
-.social-icon ul {
+.social-icon {
   display: flex;
   gap: 10px;
+  list-style: none;
 }
 .social-icon a:hover {
-  color: #12b560;
+  color: var(--main-color);
 }
 
 .icon {
@@ -215,8 +236,8 @@ body {
   height: 30px;
 }
 
-@media only screen and (max-width: 740px) { 
-  .navbar li {
+@media only screen and (max-width: 800px) { 
+  .navbar-list {
     font-size: 18px;
   }
   
@@ -229,19 +250,39 @@ body {
   }
 
   .play-video {
-    width: 400px;
-    height: 400px;
+    width: min(100%, 400px);
   }
 
-  .for-earth-sec {
-    padding: 10px;
+  .about-section {
+    padding: 20px;
   }
 
-  .for-earth-wrap {
-    display: grid;
+  .about-wrap {
+    grid-template-columns: 1fr;
   }
 
-  .for-earth-detail {
-    max-width: fit-content;
+
+  .product-item {
+    grid-template-columns: 1fr 1fr ;
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .site-head {
+    justify-content: center;
+  }
+
+  .menu {
+    gap: 10px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .product-item {
+    width: min(100%, 600px);
+    padding: 30px;
   }
 }

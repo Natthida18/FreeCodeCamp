@@ -10,13 +10,16 @@
 </head>
 
 <body>
-  <nav id="navbar" class="nav-bar">
-    <ul>
-      <li><a class="nav-link clear" href="#">Home</a></li>
-      <li><a class="nav-link clear" href="#">About</a></li>
-      <li><a class="nav-link clear" href="#">Portfolio</a></li>
-    </ul>
-  </nav>
+  <header class="site-head">
+    <nav id="navbar" class="navbar">
+      <ul class="navbar-menu">
+        <li><a class="link" href="#">Home</a></li>
+        <li><a class="link" href="#">About</a></li>
+        <li><a class="link" href="#">Portfolio</a></li>
+        <li><a class="link" href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
   <div class="container">
     <section id="welcome-section" class="welcome">
       <div class="welcome-wrap">
@@ -25,14 +28,10 @@
         <a href="#"><button class="button">CONTACT ME</button></a>
       </div>
     </section>
-    <section class="profile-sec">
-      <div class="profile img">
-        <img
-          src="https://scontent.fbkk5-7.fna.fbcdn.net/v/t39.30808-6/428700052_3713012119019293_1896924206787543235_n.jpg?stp=cp6_dst-jpg_s1080x2048&_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeE7DCo-5wpvhG9zbZ-Iscq1208DUQNV3NbbTwNRA1Xc1vvnFEaJPB_gAyPiMwNU8UG29BO9EfojE98ownOqnVrf&_nc_ohc=UX6YBSlk1iIAX_jctaT&_nc_ht=scontent.fbkk5-7.fna&oh=00_AfAoNyIyEKSCS2tKjwX4WYtHVT0ja6VLVr3U9myhiSbxCg&oe=65E1DAD8"
-          alt="Natthida Img" class="profile-img">
-      </div>
+    <section class="profile-section">
+      <img src="./img/profile.jpeg" alt="Natthida Image" class="profile-img">
       <div class="profile description">
-        <h2 class="head">Who am i?</h2>
+        <h2 class="title">Who am i?</h2>
         <p class="info">I'm Natthida Kanananonthatham. <br>A Junior Wordpress Developer</p>
         <div class="personal-info">
           <span><strong>Name:</strong> Natthida Kanananonthatham</span>
@@ -44,49 +43,42 @@
           improving myself and never stop
           learning new things, self-confident
           and ambivert person.</p>
-        <a href="https://drive.google.com/file/d/1JWHUWP_rUV7rI_SXjtZNZWe9N4cNnELo/view?usp=drive_link" target="_blank"><button class="button">Download CV</button></a>
+        <a href="https://drive.google.com/file/d/1JWHUWP_rUV7rI_SXjtZNZWe9N4cNnELo/view?usp=drive_link"
+          target="_blank"><button class="button">Download CV</button></a>
       </div>
     </section>
-    <section id="projects" class="portfolio">
-      <h2 class="head">Portfolio</h2>
-      <div class="project-wrapper">
-        <a href="https://github.com/Natthida18/FreeCodeCamp/tree/a80b919ff00f6dff4a1f5e3698b02851ee2e0675/Survey%20Form" target="_blank" class="project-link clear">
-          <img
-            src="https://scontent.fbkk5-6.fna.fbcdn.net/v/t39.30808-6/429522091_3716820918638413_1825690224507327220_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeHauVFOxv-1ORTWQqfsQ4jLbSM5I6g9wAVtIzkjqD3ABXaOeQgjv6X3ohdgd77-A7uhtVfl8seKrNgP67RLxd_Y&_nc_ohc=bHMzvHKIAscAX8ecH76&_nc_ht=scontent.fbkk5-6.fna&oh=00_AfBw-ardVItly15gjQKXmcuseN2PAKv2pbDSpOqkG_uXZQ&oe=65E1944F"
-            alt="Survey Form" class="project-image">
+    <section id="projects" class="projects-section center">
+      <h2 class="title">Portfolio</h2>
+      <div class="project-wrap">
+        <a href="../Survey Form/index.html" target="_blank" class="link">
+          <img src="./img/survey-form.png" alt="Survey Form" class="project-image">
           <div class="project-title">
             <p>Survey Form</p>
           </div>
         </a>
-        <a href="https://github.com/Natthida18/FreeCodeCamp/tree/a80b919ff00f6dff4a1f5e3698b02851ee2e0675/Tribute%20Page" target="_blank" class="project-link clear">
-          <img
-            src="https://scontent.fbkk5-6.fna.fbcdn.net/v/t39.30808-6/429544434_3716822881971550_7119343732317249743_n.jpg?stp=cp6_dst-jpg&_nc_cat=102&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeFPCqlfwfz1iLW7pzCi0ucnSi20Lxbhs7JKLbQvFuGzsqBZsojRcL51fdNQy_5j568b1rrv-UDRUw-M6-jNSM4Z&_nc_ohc=RemGtVKpUWgAX9NqBvX&_nc_ht=scontent.fbkk5-6.fna&oh=00_AfBqjjJe27vRsukhGZyElCu7xcFi96zac_OuDwyhCSIT7A&oe=65E2483D"
-            alt="Tribute Page" class="project-image">
+        <a href="../Tribute Page/index.html" target="_blank" class="link">
+          <img src="./img/tribute-page.png" alt="Tribute Page" class="project-image">
           <div class="project-title">
             <p>Tribute Page</p>
           </div>
         </a>
-        <a href="https://github.com/Natthida18/FreeCodeCamp/tree/a80b919ff00f6dff4a1f5e3698b02851ee2e0675/Technical%20Document" target="_blank" class="project-link clear">
-          <img
-            src="https://scontent.fbkk5-7.fna.fbcdn.net/v/t39.30808-6/428706037_3716820908638414_4342603362499368726_n.jpg?stp=cp6_dst-jpg&_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeF91ASxRCfevRYih2bXcooRBanNo-CYKsgFqc2j4JgqyANZ2R21DeTM91dMVXa3Hju1MNZWTYiKn_LBwJCwQrF4&_nc_ohc=NGytX9hkuKsAX9qqbQv&_nc_ht=scontent.fbkk5-7.fna&oh=00_AfDZLzXF5IkkBgummCbsMpQsWbPduJ0Dk4COPgjp9vRGRA&oe=65E3245C"
-            alt="Technical Document" class="project-image">
+        <a href="../Technical Document/index.html" target="_blank" class="link">
+          <img src="./img/html-document.png" alt="Technical Document" class="project-image">
           <div class="project-title">
             <p>Technical Document</p>
           </div>
         </a>
-        <a href="https://github.com/Natthida18/FreeCodeCamp/tree/a80b919ff00f6dff4a1f5e3698b02851ee2e0675/Landing%20Page" target="_blank" class="project-link clear">
-          <img
-            src="https://scontent.fbkk5-7.fna.fbcdn.net/v/t39.30808-6/428697562_3716829328637572_3421907869029992439_n.jpg?stp=cp6_dst-jpg&_nc_cat=108&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeHEurNw1B2mO3yEMAh8QoRkuytFVfNC7uO7K0VV80Lu4yAmE4hLe2nz-_TCL9OW4_14Yasz36AtArTZCBsYeriF&_nc_ohc=VmPBY0cL11AAX-NdOGx&_nc_ht=scontent.fbkk5-7.fna&oh=00_AfDgAG9V3gQUgrlJBp-qPjtwJNI0l4B_MZniDD_In7ngxw&oe=65E2D1E5"
-            alt="Product Landing Page" class="project-image">
+        <a href="../Landing Page/index.html" target="_blank" class="link">
+          <img src="./img/landing-page.png" alt="Product Landing Page" class="project-image">
           <div class="project-title">
             <p>Product Landing Page</p>
           </div>
         </a>
       </div>
     </section>
-    <section class="contact-sec">
-      <p class="sub-head">Work with me</p>
-      <h2 class="head">CONTACT ME</h2>
+    <section class="contact-section center">
+      <p class="sub-title">Work with me</p>
+      <h2 class="title">CONTACT ME</h2>
       <div class="contact">
         <div class="contact-info">
           <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

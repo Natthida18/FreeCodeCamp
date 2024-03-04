@@ -79,8 +79,8 @@ body {
 }
 
 .play-video {
-  width: 800px;
-  height: 400px;
+  width: min(100%, 1200px);
+  height: auto;
   aspect-ratio: 16/9;
   margin-top: 30px;
 }
@@ -208,7 +208,7 @@ h1 {
   gap: 20px;
 }
 
-.footer-head {
+.footer-title {
   text-transform: uppercase;
   margin: 0;
 }
@@ -249,10 +249,6 @@ h1 {
     font-size: 18px;
   }
 
-  .play-video {
-    width: min(100%, 400px);
-  }
-
   .about-section {
     padding: 20px;
   }
@@ -271,10 +267,6 @@ h1 {
 @media only screen and (max-width: 520px) {
   .site-head {
     justify-content: center;
-  }
-
-  .menu {
-    gap: 10px;
   }
 
   .container {

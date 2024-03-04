@@ -192,15 +192,20 @@ h1 {
   box-shadow: 1px 5px 5px var(--hover-color);
 }
 
-.footer-wrap {
+.footer-container {
   background-color: var(--background-color1);
+} 
+
+.footer-wrap {
+  width: min(100%, 1200px);
   padding: 30px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: baseline;
   gap: 20px;
-} 
+}
 
 .footer {
   display: flex;
